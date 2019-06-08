@@ -1,0 +1,9 @@
+Catalog -
+
+http://localhost:8080/product/all
+
+[{"id":1001,"name":"Product 1","desc":"Product 1 Description","amount":50.0,"quantity":100},{"id":1002,"name":"Product 2","desc":"Product 2 Description","amount":150.0,"quantity":200},{"id":1003,"name":"Product 3","desc":"Product 3 Description","amount":250.0,"quantity":0}]
+
+http://localhost:8080/product/1001
+
+{"id":1001,"name":"Product 1","desc":"Product 1 Description","amount":50.0,"quantity":100}
