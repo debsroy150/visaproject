@@ -23,3 +23,11 @@ SAMPLE RESULT : {"orderId":1,"orderItems":[],"orderTotal":0.0,"status":"P","emai
 API : http://localhost:8081/order/addItem?_orderId=1&_productId=1001&_quantity=20&_item_total=245&_orderTotal=245
 
 SAMPLE RESULT : 1001
+
+API : http://localhost:8082/payment/submitSuccess?_orderId=1&_mCard=1111&_amount=245
+
+SAMPLE RESULT : 
+
+API : http://localhost:8082/payment/submitFailure?_orderId=1&_mCard=1111&_amount=245_reason=Card_Invalid
+
+SAMPLE RESULT : 
