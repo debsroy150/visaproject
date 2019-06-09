@@ -15,7 +15,7 @@ public class PaymentController {
     PaymentService tServ;
 
     @RequestMapping(value = "/submitSuccess", params = {"_orderId","_mCard", "_amount"}, method = {RequestMethod.POST})
-    public void callbackURLSuccess(@RequestParam(value="_orderId") int orderId, @RequestParam(value="_mCard") int mCard, @RequestParam(value="amount") double amount) {
+    public void callbackURLSuccess(@RequestParam(value="_orderId") int orderId, @RequestParam(value="_mCard") int mCard, @RequestParam(value="_amount") double amount) {
         tServ.submitPayment(orderId, mCard, amount, null);
     }
 

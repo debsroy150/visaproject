@@ -56,6 +56,6 @@ public class VisaOrderJDBCDao {
 
     public void updateOrderStatus(int orderId, char status) {
         jdbcTemplate.update("UPDATE VISAORDER SET STATUS = ? WHERE ORDERID = ?",
-                new Object[]{orderId, status});
+                new Object[]{status, orderId});
     }
 }

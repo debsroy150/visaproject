@@ -28,7 +28,7 @@ public class OrderController {
         return oServ.getPendingOrder(emailId);
     }
 
-    @RequestMapping(value = "/updateStatus", params = {"_orderId, _status"}, method = {RequestMethod.PUT})
+    @RequestMapping(value = "/updateStatus", params = {"_orderId", "_status"}, method = {RequestMethod.PUT})
     public void updateStatus(@RequestParam(value="_orderId") int orderId, @RequestParam(value="_status") char status) {
         oServ.updateOrderStatus(orderId, status);
     }
